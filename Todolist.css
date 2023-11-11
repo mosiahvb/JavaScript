@@ -1,0 +1,134 @@
+/* this removes all original stylings from page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Background color */
+    background-color:  rgb(109, 186, 238);
+    /* Text color */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+/* aligns everything within header and form to the center of the screen */
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-list,
+.school-list,
+.home-list {
+    background-color: rgb(109, 186, 238);
+    color: black;
+}
+
+/* increases the font size and background, color of form input and button */
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+/* added color to button and adds delay to the buttons  */
+form button {
+    color: gray;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* transition colors for button*/
+form button:hover {
+    background: black;
+    color: white;
+}
+
+/* aligns items to the Center*/
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*sizing for to do list*/
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+/* what item text or list?*/
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+/* trashcan icon */
+.trash-btn,
+.complete-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Checkbox icon color */
+.complete-btn {
+    background: rgb(112, 199, 112);
+    color: black;
+}
+
+.todo-item {
+    padding: 0rem 0.7rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+/* add special effect of line through completed item*/
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* transition parameters for disappearing finished items */
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.todo-list-container {
+    display: flex;
+}
+
+.todo-list {
+    flex: 1;
+    margin: 0 1rem;
+}
